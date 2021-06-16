@@ -1,0 +1,12 @@
+# /*=============================================
+# = configuracion base de datos de oracle  12c  =
+# =============================================*/
+
+services:
+  oracledb:
+    container_name: oracledb
+    image: store/oracle/database-enterprise:12.2.0.1
+    ports:
+      - "1521:1521"
+    volumes:
+      - ./data:/ORCL
